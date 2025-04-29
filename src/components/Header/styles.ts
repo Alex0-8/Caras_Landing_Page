@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const HeaderSection = styled.header`
     font-weight: 800;
-    background-color: #ED1E1E;
+    background-color: ${props => props.theme.colors.backgroundPrimary};
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -13,6 +13,11 @@ const HeaderSection = styled.header`
     & > img {
         width: 150px;
         padding: 20px;
+    }
+
+    @media screen and (max-width: 450px) {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 `;
 
