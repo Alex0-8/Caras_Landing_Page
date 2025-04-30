@@ -5,6 +5,7 @@ import Theme from './theme';
 import SubscriptionForm from './components/SubscriptionForm';
 import { SubscriptionData } from './hooks/useSubscription';
 import FeaturedSection from './components/FeaturedSection';
+import Testimonials from './components/Testimonials';
 
 function App() {
   const handleSubscribe = (data: SubscriptionData) => {
@@ -19,6 +20,7 @@ function App() {
           <main>
             <SubscriptionForm onSubscribe={handleSubscribe}/>
             <FeaturedSection />
+            <Testimonials />
           </main>
         </div>
     </ThemeProvider>

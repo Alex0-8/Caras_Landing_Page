@@ -7,10 +7,11 @@ const FeaturedContainer = styled.section`
     margin: 0 auto;
     box-sizing: border-box;
 
-    & > article h4 {
+    h4 {
         font-size: ${props => props.theme.fonts.size.responsive2};
         text-align: center;
-        margin-bottom: 10px;
+        margin: 35px 0 20px 0;
+        font-weight: 600;
     }
 
     & > article ul{
@@ -20,6 +21,10 @@ const FeaturedContainer = styled.section`
             font-size: ${props => props.theme.fonts.size.responsive3};
             margin-bottom: 5px;
         }
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 90%;
     }
 `;
 
