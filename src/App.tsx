@@ -4,6 +4,7 @@ import GlobalStyles from './theme/GlobalStyles';
 import Theme from './theme';
 import SubscriptionForm from './components/SubscriptionForm';
 import { SubscriptionData } from './hooks/useSubscription';
+import FeaturedSection from './components/FeaturedSection';
 
 function App() {
   const handleSubscribe = (data: SubscriptionData) => {
@@ -17,6 +18,7 @@ function App() {
           <Header />
           <main>
             <SubscriptionForm onSubscribe={handleSubscribe}/>
+            <FeaturedSection />
           </main>
         </div>
     </ThemeProvider>
