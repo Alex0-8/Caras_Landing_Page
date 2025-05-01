@@ -84,8 +84,14 @@ const SubmitFormBtn = styled.button`
     }
 `;
 
-const SuccesMsg = styled.p`
+const SuccessMsg = styled.p`
     border: 3px solid #25ff11;
+    border-radius: 8px;
+    padding: 7px;
+`;
+
+const ErrorMsg = styled.p`
+    border: 3px solid #ff1111;
     border-radius: 8px;
     padding: 7px;
 `;
@@ -96,5 +102,6 @@ export {
     FormSubmit,
     InputContainer,
     SubmitFormBtn,
-    SuccesMsg
+    SuccessMsg,
+    ErrorMsg
 }

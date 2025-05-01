@@ -1,5 +1,5 @@
 import React from "react";
-import { FormSection, InputContainer, Intro, SubmitFormBtn, SuccesMsg } from "./styles";
+import { ErrorMsg, FormSection, InputContainer, Intro, SubmitFormBtn, SuccessMsg } from "./styles";
 import useSubscriptionForm, { SubscriptionData } from "../../hooks/useSubscription";
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
 };
 
 const SubscriptionForm = ({ onSubscribe }: Props) => {
-    const {form, error, succes, handleChange, handleSubmit} = useSubscriptionForm(onSubscribe);
+    const {form, error, success, handleChange, handleSubmit} = useSubscriptionForm(onSubscribe);
 
     return(
         <>
@@ -17,22 +17,21 @@ const SubscriptionForm = ({ onSubscribe }: Props) => {
             </Intro>
 
         <FormSection onSubmit={handleSubmit}>
-            {error && <p>{error}</p>}
             <h3>¡Únete a nuestra comunidad!</h3>
             <form>
                 <InputContainer>
                     <label>Nombre completo</label>
-                    <input type="text" name="name" value={form.name} placeholder="Nombre completo" onChange={handleChange} required/>
+                    <input type="text" name="name" value={form.name} placeholder="Nombre completo" onChange={handleChange}/>
                 </InputContainer>
                 
                 <InputContainer>
                     <label>Correo electrónico</label>
-                    <input type="email" name="email" value={form.email} placeholder="Correo electrónico" onChange={handleChange} required/>
+                    <input type="email" name="email" value={form.email} placeholder="Correo electrónico" onChange={handleChange} />
                 </InputContainer>
 
                 <SubmitFormBtn type="submit">Suscribirme</SubmitFormBtn>
-                {succes && <SuccesMsg>¡Suscripcion Exitosa!</SuccesMsg>}
-
+                {success && <SuccessMsg>¡Suscripcion Exitosa!</SuccessMsg>}
+                {error && <ErrorMsg>{error}</ErrorMsg>}
             </form>
         </FormSection>
         </>

@@ -25,7 +25,7 @@ const FeaturedSection = () => {
 
                 <BenefitItem>
                     <img src={BenefitImg2} alt="contenido-exclusivo" />
-                    <h5>Acceso exlusivo a las últimas noticias</h5>
+                    <h5>Acceso exclusivo a las últimas noticias</h5>
                     <p>Mantente informado con actualizaciones diarias sobre moda, entretenimiento, cultura y mucho más.</p>
                 </BenefitItem>
             </BenefitContainer>
