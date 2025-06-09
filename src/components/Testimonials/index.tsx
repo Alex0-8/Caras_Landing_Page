@@ -9,26 +9,26 @@ import { CommentContainer, CommentContent, PorfileImg } from "./styles";
 const Testimonials = () => {
     return (
         <FeaturedContainer>
-            <h4>Lo que dicen nuestros suscriptores</h4>
+            <h4 tabIndex={0}>Lo que dicen nuestros suscriptores</h4>
             
             <CommentContainer>
                 <div>
                     <PorfileImg>
-                    <img src={PorfileImg1} alt="Imagen de perfil" />
+                    <img src={PorfileImg1} alt="María Fernández" />
                     </PorfileImg>
                 </div>
                 <CommentContent>
                     <div>
                         <h6 className="user-name">María Fernández</h6>
                     </div>
-                    <p className="comment-txt">Recibir el newsletter de CARAS es como tener acceso a un mundo exclusivo todos los días. Amo estar al tanto de las últimas tendencias en moda y estilo de vida.</p>
+                    <p className="comment-txt">Recibir el <span lang="en">newsletter</span> de CARAS es como tener acceso a un mundo exclusivo todos los días. Amo estar al tanto de las últimas tendencias en moda y estilo de vida.</p>
                 </CommentContent>
             </CommentContainer>
 
             <CommentContainer>
                 <div>
                     <PorfileImg>
-                    <img src={PorfileImg2} alt="Imagen de perfil" />
+                    <img src={PorfileImg2} alt="Luis Ramírez" />
                     </PorfileImg>
                 </div>
                 <CommentContent>
@@ -42,21 +42,21 @@ const Testimonials = () => {
             <CommentContainer>
                 <div>
                     <PorfileImg>
-                    <img src={PorfileImg3} alt="Imagen de perfil" />
+                    <img src={PorfileImg3} alt="Juan Torres" />
                     </PorfileImg>
                 </div>
                 <CommentContent>
                     <div>
                         <h6 className="user-name">Juan Torres</h6>
                     </div>
-                    <p className="comment-txt">Gracias al newsletter de CARAS, me siento más informado sobre eventos y promociones especiales. Además, siempre me sorprenden con contenido único.</p>
+                    <p className="comment-txt">Gracias al <span lang="en">newsletter</span> de CARAS, me siento más informado sobre eventos y promociones especiales. Además, siempre me sorprenden con contenido único.</p>
                 </CommentContent>
             </CommentContainer>
 
             <CommentContainer>
                 <div>
                     <PorfileImg>
-                    <img src={PorfileImg4} alt="Imagen de perfil" />
+                    <img src={PorfileImg4} alt="Sofía Herrera" />
                     </PorfileImg>
                 </div>
                 <CommentContent>

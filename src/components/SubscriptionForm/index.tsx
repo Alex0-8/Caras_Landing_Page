@@ -12,21 +12,21 @@ const SubscriptionForm = ({ onSubscribe }: Props) => {
     return(
 
         <FormSection onSubmit={handleSubmit}>
-            <h3>¡Únete a nuestra comunidad!</h3>
-            <form>
+            <h3 tabIndex={0}>¡Únete a nuestra comunidad!</h3>
+            <form aria-label="formulario de suscripción">
                 <InputContainer>
-                    <label>Nombre completo</label>
-                    <input type="text" name="name" value={form.name} placeholder="Nombre completo" onChange={handleChange}/>
+                    <label htmlFor="name">Nombre completo</label>
+                    <input type="text" name="name" id="name" value={form.name} placeholder="Nombre completo" onChange={handleChange}/>
                 </InputContainer>
                 
                 <InputContainer>
-                    <label>Correo electrónico</label>
-                    <input type="email" name="email" value={form.email} placeholder="Correo electrónico" onChange={handleChange} />
+                    <label htmlFor="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" value={form.email} placeholder="Correo electrónico" onChange={handleChange} />
                 </InputContainer>
 
                 <SubmitFormBtn type="submit">Suscribirme</SubmitFormBtn>
-                {success && <SuccessMsg>¡Suscripcion Exitosa!</SuccessMsg>}
-                {error && <ErrorMsg>{error}</ErrorMsg>}
+                {success && <SuccessMsg role="status" aria-live="polite">¡Suscripcion Exitosa!</SuccessMsg>}
+                {error && <ErrorMsg role="alert" aria-live="polite">{error}</ErrorMsg>}
             </form>
         </FormSection>
       

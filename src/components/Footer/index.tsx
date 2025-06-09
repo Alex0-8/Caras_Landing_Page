@@ -7,8 +7,8 @@ const FooterSection = () => {
         <FooterContainer>
         <img src={FooterLogoImg} alt="Logotipo de CARAS" />
         <section>
-            <p>Síguenos en nuestras redes sociales:</p>
-            <FooterNav>      
+            <p tabIndex={0}>Síguenos en nuestras redes sociales:</p>
+            <FooterNav role="navigation">      
                 <a href="https://www.facebook.com/Revista.Caras">Facebook</a> | <a href="https://twitter.com/carasmexico">Twitter</a> | <a href="https://www.instagram.com/carasmexico/">Instagram</a>
             </FooterNav>
             <p>Contacto: info@caras.com</p>
@@ -16,7 +16,7 @@ const FooterSection = () => {
             
         <hr />
         <div>
-            <p>EDITORIAL TELEVISA S.A. DE C.V. TODOS LOS DERECHOS RESERVADOS. TBG - EDITORIAL TELEVISA - ENTERTAINMENT - NEWS</p>
+            <p>EDITORIAL TELEVISA S.A. DE C.V. TODOS LOS DERECHOS RESERVADOS. TBG - EDITORIAL TELEVISA - <span lang="en">ENTERTAINMENT - NEWS</span></p>
         </div>
     </FooterContainer>
     )

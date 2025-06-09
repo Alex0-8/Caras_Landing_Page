@@ -18,7 +18,7 @@ function App() {
       <GlobalStyles />
         <div className="App">
           <Header />
-          <main>
+          <main role='main'>
             <SubscriptionForm onSubscribe={handleSubscribe}/>
             <FeaturedSection />
             <Testimonials />

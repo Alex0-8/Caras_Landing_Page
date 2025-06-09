@@ -10,7 +10,7 @@ const HeaderSection = styled.header`
     align-items: center;
     justify-content: space-between;
 
-    & > img {
+    & a > img {
         width: 150px;
         padding: 20px;
     }
@@ -25,7 +25,6 @@ const HeaderNav = styled.nav`
     padding: 0 20px;
     display: flex;
     max-width: 100%;
-    flex-direction: row-reverse;
     gap: 8px;
 
     & > a {
