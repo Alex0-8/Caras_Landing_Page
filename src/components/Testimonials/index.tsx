@@ -9,7 +9,7 @@ import { CommentContainer, CommentContent, PorfileImg } from "./styles";
 const Testimonials = () => {
     return (
         <FeaturedContainer>
-            <h4 tabIndex={0}>Lo que dicen nuestros suscriptores</h4>
+            <h2 tabIndex={0}>Lo que dicen nuestros suscriptores</h2>
             
             <CommentContainer>
                 <div>
@@ -19,7 +19,7 @@ const Testimonials = () => {
                 </div>
                 <CommentContent>
                     <div>
-                        <h6 className="user-name">María Fernández</h6>
+                        <p className="user-name">María Fernández</p>
                     </div>
                     <p className="comment-txt">Recibir el <span lang="en">newsletter</span> de CARAS es como tener acceso a un mundo exclusivo todos los días. Amo estar al tanto de las últimas tendencias en moda y estilo de vida.</p>
                 </CommentContent>
@@ -33,7 +33,7 @@ const Testimonials = () => {
                 </div>
                 <CommentContent>
                     <div>
-                        <h6 className="user-name">Luis Ramírez</h6>
+                        <p className="user-name">Luis Ramírez</p>
                     </div>
                     <p className="comment-txt">El contenido es increíble. Siempre hay entrevistas y artículos que no encuentro en ningún otro lugar. Definitivamente vale la pena suscribirse.</p>
                 </CommentContent>
@@ -47,7 +47,7 @@ const Testimonials = () => {
                 </div>
                 <CommentContent>
                     <div>
-                        <h6 className="user-name">Juan Torres</h6>
+                        <p className="user-name">Juan Torres</p>
                     </div>
                     <p className="comment-txt">Gracias al <span lang="en">newsletter</span> de CARAS, me siento más informado sobre eventos y promociones especiales. Además, siempre me sorprenden con contenido único.</p>
                 </CommentContent>
@@ -61,7 +61,7 @@ const Testimonials = () => {
                 </div>
                 <CommentContent>
                     <div>
-                        <h6 className="user-name">Sofía Herrera</h6>
+                        <p className="user-name">Sofía Herrera</p>
                     </div>
                     <p className="comment-txt">Me encanta comenzar mi día con las noticias más interesantes de entretenimiento y cultura. ¡Es mi lectura favorita!</p>
                 </CommentContent>

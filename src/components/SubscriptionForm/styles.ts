@@ -12,7 +12,7 @@ const Intro = styled.section`
         margin-bottom: 10px;
     }
     
-    & > h2 {
+    & > p {
         font-size: ${props => props.theme.fonts.size.responsive1};
     }
 
@@ -30,7 +30,7 @@ const FormSection = styled.section`
     text-align: center;
     padding: 30px 20px;
 
-    & > h3{
+    & > h2{
         font-size: ${props => props.theme.fonts.size.responsive2};
         margin-bottom: 20px;
     }

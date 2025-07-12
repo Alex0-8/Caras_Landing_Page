@@ -8,7 +8,7 @@ const FeaturedSection = () => {
     return(
         <FeaturedContainer aria-label="presentacion">
             <article>
-            <h4 tabIndex={0}>¿Por qué suscribirte?</h4>
+            <h2 tabIndex={0}>¿Por qué suscribirte?</h2>
                 <ul>
                     <li>Acceso exclusivo a contenido premium.</li>
                     <li>Las últimas noticias de moda, entretenimiento y cultura.</li>
@@ -19,13 +19,13 @@ const FeaturedSection = () => {
             <BenefitContainer aria-label="benaficios">
                 <BenefitItem>
                     <img src={BenefitImg1} alt="Entrevistas íntimas y reportajes de lujo" />
-                    <h5 tabIndex={0}>Acceso exclusivo a contenido premium</h5>
+                    <h3 tabIndex={0}>Acceso exclusivo a contenido premium</h3>
                     <p>Disfruta de entrevistas íntimas, reportajes de lujo y tendencias seleccionadas solo para nuestros suscriptores.</p>
                 </BenefitItem>
 
                 <BenefitItem>
                     <img src={BenefitImg2} alt="Últimas noticias de moda y cultura" />
-                    <h5 tabIndex={0}>Acceso exclusivo a las últimas noticias</h5>
+                    <h3 tabIndex={0}>Acceso exclusivo a las últimas noticias</h3>
                     <p>Mantente informado con actualizaciones diarias sobre moda, entretenimiento, cultura y mucho más.</p>
                 </BenefitItem>
             </BenefitContainer>

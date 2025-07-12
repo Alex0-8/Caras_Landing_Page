@@ -35,7 +35,7 @@ const CommentContent = styled.div`
         align-items: center;
         margin-bottom: 8px;
 
-        & > h6 {
+        & > p {
             font-size: ${props => props.theme.fonts.size.responsive1};
             font-weight: 600;
             color: ${props => props.theme.colors.txtUserName};
@@ -45,6 +45,7 @@ const CommentContent = styled.div`
 
     & > p {
         font-size: clamp(0.813rem, 0.741rem + 0.357vw, 1.063rem);
+        font-family: ${props => props.theme.fonts.barlowLight};
         color: ${props => props.theme.colors.txtTertiary};
         margin: 0;
     }

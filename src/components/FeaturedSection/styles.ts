@@ -7,7 +7,7 @@ const FeaturedContainer = styled.section`
     margin: 0 auto;
     box-sizing: border-box;
 
-    h4 {
+    h2 {
         font-size: ${props => props.theme.fonts.size.responsive2};
         text-align: center;
         margin: 35px 0 20px 0;
@@ -46,7 +46,7 @@ const BenefitItem = styled.div`
         margin-bottom: 10px;
     }
 
-    & > h5{
+    & > h3{
         font-size: clamp(1.25rem, 1.179rem + 0.357vw, 1.5rem);
         font-weight: 600;
         margin-bottom: 7px;

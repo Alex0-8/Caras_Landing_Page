@@ -9,7 +9,7 @@ const FooterSection = () => {
         <section>
             <p tabIndex={0}>Síguenos en nuestras redes sociales:</p>
             <FooterNav role="navigation">      
-                <a href="https://www.facebook.com/Revista.Caras">Facebook</a> | <a href="https://twitter.com/carasmexico">Twitter</a> | <a href="https://www.instagram.com/carasmexico/">Instagram</a>
+                <a href="https://www.facebook.com/Revista.Caras" rel="noopener, noreferrer">Facebook</a> | <a href="https://twitter.com/carasmexico" rel="noopener, noreferrer">Twitter</a> | <a href="https://www.instagram.com/carasmexico/" rel="noopener, noreferrer">Instagram</a>
             </FooterNav>
             <p>Contacto: info@caras.com</p>
         </section>

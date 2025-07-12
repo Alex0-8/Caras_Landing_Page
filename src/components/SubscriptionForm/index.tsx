@@ -12,7 +12,7 @@ const SubscriptionForm = ({ onSubscribe }: Props) => {
     return(
 
         <FormSection onSubmit={handleSubmit}>
-            <h3 tabIndex={0}>¡Únete a nuestra comunidad!</h3>
+            <h2 tabIndex={0}>¡Únete a nuestra comunidad!</h2>
             <form aria-label="formulario de suscripción">
                 <InputContainer>
                     <label htmlFor="name">Nombre completo</label>
