@@ -24,7 +24,7 @@ const SubscriptionForm = ({ onSubscribe }: Props) => {
                     <input type="email" id="email" name="email" value={form.email} placeholder="Correo electrónico" onChange={handleChange} />
                 </InputContainer>
 
-                <SubmitFormBtn type="submit">Suscribirme</SubmitFormBtn>
+                <SubmitFormBtn type="submit">Únete a la comunidad CARAS</SubmitFormBtn>
                 {success && <SuccessMsg role="status" aria-live="polite">¡Suscripcion Exitosa!</SuccessMsg>}
                 {error && <ErrorMsg role="alert" aria-live="polite">{error}</ErrorMsg>}
             </form>

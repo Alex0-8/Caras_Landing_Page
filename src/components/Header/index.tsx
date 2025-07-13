@@ -14,8 +14,8 @@ const Header = () => {
         </HeaderSection>
 
         <Intro>
-            <h1 tabIndex={0}>¡Suscríbete al <span lang="en">Newsletter</span> de CARAS!</h1>
-            <p tabIndex={0}>Recibe las últimas noticias, tendencias y entrevistas exclusivas directamente en tu correo electrónico.</p>
+            <h1 tabIndex={0}>Bienvenido a <span lang="en">CARAS</span>: tu ventana exclusiva al mundo del glamour</h1>
+            <p tabIndex={0}>Sumérgete en historias detrás de cámaras, tendencias de moda y lo último en cultura y entretenimiento. Con <span lang="en">CARAS</span>, vives cada edición como si estuvieras dentro de la alfombra roja.</p>
         </Intro>
         </>
     )

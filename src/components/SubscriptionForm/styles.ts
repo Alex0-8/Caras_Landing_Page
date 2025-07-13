@@ -65,10 +65,11 @@ const InputContainer = styled.div`
 `;
 
 const SubmitFormBtn = styled.button`
-    padding: 10px;
-    font-size: 1.125rem;
+    width: 170px;
+    padding: 7px;
+    font-size: 1.0625rem;
     color: ${props => props.theme.colors.txtSecondary};
-    background-color: #ef4138;
+    background-color: #ff0b00;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -78,7 +79,7 @@ const SubmitFormBtn = styled.button`
     margin-bottom: 10px;
 
     &:hover {
-        background-color: #ff0b00;
+        background-color: #ef4138;
         box-shadow: 0 4px 6px #0000004d;
         transform: scale(1.05);
     }

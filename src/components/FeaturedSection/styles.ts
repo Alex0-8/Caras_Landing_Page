@@ -20,6 +20,10 @@ const FeaturedContainer = styled.section`
         & > li{
             font-size: ${props => props.theme.fonts.size.responsive3};
             margin-bottom: 5px;
+
+            strong {
+                font-weight: 600;
+            }
         }
     }
 

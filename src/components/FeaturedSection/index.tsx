@@ -10,9 +10,10 @@ const FeaturedSection = () => {
             <article>
             <h2 tabIndex={0}>¿Por qué suscribirte?</h2>
                 <ul>
-                    <li>Acceso exclusivo a contenido premium.</li>
-                    <li>Las últimas noticias de moda, entretenimiento y cultura.</li>
-                    <li>Promociones y eventos únicos.</li>
+                    <li><strong>Acceso VIP</strong> a sorteos, eventos y contenido premium.</li>
+                    <li><strong>Entrevistas exclusivas</strong> con tus celebridades favoritas.</li>
+                    <li><strong>Tendencias de moda</strong> antes de que salgan en las pasarelas.</li>
+                    <li><strong>Crónicas de espectáculos</strong> y backstage de los grandes eventos.</li>
                 </ul>
             </article>
 
