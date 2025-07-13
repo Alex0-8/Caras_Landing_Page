@@ -20,7 +20,7 @@ const PorfileImg = styled.div`
     border-radius: 50%;
     overflow: hidden;
 
-    & > img {
+    & > picture img {
         width: 100%;
         object-fit: cover;
     }

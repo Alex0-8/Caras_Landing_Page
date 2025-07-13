@@ -6,7 +6,7 @@ const FooterContainer = styled.footer`
     text-align: center;
     margin-top: 20px;
 
-    & > img {
+    & > picture img {
         width: 150px;
         padding: 20px;
     }

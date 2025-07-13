@@ -3,6 +3,10 @@ import PorfileImg1 from'../../img/fotos-de-perfil/comentario-1.jpg';
 import PorfileImg2 from'../../img/fotos-de-perfil/comentario-2.jpg';
 import PorfileImg3 from'../../img/fotos-de-perfil/comentario-3.jpg';
 import PorfileImg4 from'../../img/fotos-de-perfil/comentario-4.jpg';
+import PorfileImg1Webp from'../../img/fotos-de-perfil/comentario-1.webp';
+import PorfileImg2Webp from'../../img/fotos-de-perfil/comentario-2.webp';
+import PorfileImg3Webp from'../../img/fotos-de-perfil/comentario-3.webp';
+import PorfileImg4Webp from'../../img/fotos-de-perfil/comentario-4.webp';
 import { FeaturedContainer } from "../FeaturedSection/styles";
 import { CommentContainer, CommentContent, PorfileImg } from "./styles";
 
@@ -14,7 +18,11 @@ const Testimonials = () => {
             <CommentContainer>
                 <div>
                     <PorfileImg>
-                    <img src={PorfileImg1} alt="María Fernández" />
+                        <picture>
+                            <source srcSet={PorfileImg1} type="image/jpg"/>
+                            <source srcSet={PorfileImg1Webp} type="image/webp"/>
+                            <img src={PorfileImg1Webp} alt="María Fernández" />
+                        </picture>
                     </PorfileImg>
                 </div>
                 <CommentContent>
@@ -28,7 +36,11 @@ const Testimonials = () => {
             <CommentContainer>
                 <div>
                     <PorfileImg>
-                    <img src={PorfileImg2} alt="Luis Ramírez" />
+                        <picture>
+                            <source srcSet={PorfileImg2} type="image/jpg"/>
+                            <source srcSet={PorfileImg2Webp} type="image/webp"/>
+                            <img src={PorfileImg2Webp} alt="Luis Ramírez" />
+                        </picture>
                     </PorfileImg>
                 </div>
                 <CommentContent>
@@ -42,7 +54,11 @@ const Testimonials = () => {
             <CommentContainer>
                 <div>
                     <PorfileImg>
-                    <img src={PorfileImg3} alt="Juan Torres" />
+                        <picture>
+                            <source srcSet={PorfileImg3} type="image/jpg"/>
+                            <source srcSet={PorfileImg3Webp} type="image/webp"/>
+                            <img src={PorfileImg3Webp} alt="Juan Torres" />
+                        </picture>
                     </PorfileImg>
                 </div>
                 <CommentContent>
@@ -56,7 +72,11 @@ const Testimonials = () => {
             <CommentContainer>
                 <div>
                     <PorfileImg>
-                    <img src={PorfileImg4} alt="Sofía Herrera" />
+                        <picture>
+                            <source srcSet={PorfileImg4} type="image/jpg"/>
+                            <source srcSet={PorfileImg4Webp} type="image/webp"/>
+                            <img src={PorfileImg4Webp} alt="Sofía Herrera" />
+                        </picture>
                     </PorfileImg>
                 </div>
                 <CommentContent>

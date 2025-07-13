@@ -10,7 +10,7 @@ const HeaderSection = styled.header`
     align-items: center;
     justify-content: space-between;
 
-    & a > img {
+    & a > picture img {
         width: 150px;
         padding: 20px;
     }

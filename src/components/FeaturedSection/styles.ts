@@ -43,7 +43,7 @@ const BenefitContainer = styled.article`
 `;
 
 const BenefitItem = styled.div`
-    & > img{
+    & > picture img{
         width: 100%;
         max-width: 300px;
         border-radius: 10px;

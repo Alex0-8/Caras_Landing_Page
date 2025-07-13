@@ -1,11 +1,16 @@
 import React from "react"
-import FooterLogoImg from '../../img/Logo-1.png'
+import FooterLogoImg from '../../img/Logo-1.png';
+import FooterLogoImgWebp from '../../img/Logo-1.webp';
 import { FooterContainer, FooterNav } from "./styles";
 
 const FooterSection = () => {
     return(
         <FooterContainer>
-        <img src={FooterLogoImg} alt="Logotipo de CARAS" />
+            <picture>
+                <source srcSet={FooterLogoImg} type="image/png"/>
+                <source srcSet={FooterLogoImgWebp} type="image/webp"/>
+                <img src={FooterLogoImgWebp} alt="Logotipo de CARAS" />
+            </picture>
         <section>
             <p tabIndex={0}>Síguenos en nuestras redes sociales:</p>
             <FooterNav role="navigation">      
