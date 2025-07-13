@@ -21,7 +21,8 @@ const PorfileImg = styled.div`
     overflow: hidden;
 
     & > picture img {
-        width: 100%;
+        width: 50px;
+        height: 50px;
         object-fit: cover;
     }
 `;
