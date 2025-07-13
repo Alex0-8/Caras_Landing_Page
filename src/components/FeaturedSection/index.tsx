@@ -24,7 +24,7 @@ const FeaturedSection = () => {
                     <picture>
                         <source srcSet={BenefitImg1} type="image/png"/>
                         <source srcSet={BenefitImg1Webp} type="image/webp"/>
-                        <img src={BenefitImg1Webp} alt="Entrevistas íntimas y reportajes de lujo" />
+                        <img src={BenefitImg1Webp} alt="Entrevistas íntimas y reportajes de lujo" loading="lazy"/>
                     </picture>
                     <h3 tabIndex={0}>Acceso exclusivo a contenido premium</h3>
                     <p>Disfruta de entrevistas íntimas, reportajes de lujo y tendencias seleccionadas solo para nuestros suscriptores.</p>
@@ -34,7 +34,7 @@ const FeaturedSection = () => {
                     <picture>
                         <source srcSet={BenefitImg2} type="image/png"/>
                         <source srcSet={BenefitImg2Webp} type="image/webp"/>
-                        <img src={BenefitImg2Webp} alt="Últimas noticias de moda y cultura" />
+                        <img src={BenefitImg2Webp} alt="Últimas noticias de moda y cultura" loading="lazy" />
                     </picture>
                     <h3 tabIndex={0}>Acceso exclusivo a las últimas noticias</h3>
                     <p>Mantente informado con actualizaciones diarias sobre moda, entretenimiento, cultura y mucho más.</p>

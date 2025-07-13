@@ -9,7 +9,7 @@ const FooterSection = () => {
             <picture>
                 <source srcSet={FooterLogoImg} type="image/png"/>
                 <source srcSet={FooterLogoImgWebp} type="image/webp"/>
-                <img src={FooterLogoImgWebp} alt="Logotipo de CARAS" />
+                <img src={FooterLogoImgWebp} alt="Logotipo de CARAS" loading="lazy"/>
             </picture>
         <section>
             <p tabIndex={0}>Síguenos en nuestras redes sociales:</p>

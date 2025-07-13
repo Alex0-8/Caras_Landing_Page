@@ -21,7 +21,7 @@ const Testimonials = () => {
                         <picture>
                             <source srcSet={PorfileImg1} type="image/jpg"/>
                             <source srcSet={PorfileImg1Webp} type="image/webp"/>
-                            <img src={PorfileImg1Webp} alt="María Fernández" />
+                            <img src={PorfileImg1Webp} alt="María Fernández" loading="lazy"/>
                         </picture>
                     </PorfileImg>
                 </div>
@@ -39,7 +39,7 @@ const Testimonials = () => {
                         <picture>
                             <source srcSet={PorfileImg2} type="image/jpg"/>
                             <source srcSet={PorfileImg2Webp} type="image/webp"/>
-                            <img src={PorfileImg2Webp} alt="Luis Ramírez" />
+                            <img src={PorfileImg2Webp} alt="Luis Ramírez" loading="lazy"/>
                         </picture>
                     </PorfileImg>
                 </div>
@@ -57,7 +57,7 @@ const Testimonials = () => {
                         <picture>
                             <source srcSet={PorfileImg3} type="image/jpg"/>
                             <source srcSet={PorfileImg3Webp} type="image/webp"/>
-                            <img src={PorfileImg3Webp} alt="Juan Torres" />
+                            <img src={PorfileImg3Webp} alt="Juan Torres" loading="lazy" />
                         </picture>
                     </PorfileImg>
                 </div>
@@ -75,7 +75,7 @@ const Testimonials = () => {
                         <picture>
                             <source srcSet={PorfileImg4} type="image/jpg"/>
                             <source srcSet={PorfileImg4Webp} type="image/webp"/>
-                            <img src={PorfileImg4Webp} alt="Sofía Herrera" />
+                            <img src={PorfileImg4Webp} alt="Sofía Herrera" loading="lazy"/>
                         </picture>
                     </PorfileImg>
                 </div>
