@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.js": "/Caras_Landing_Page/static/js/main.b9962bfb.js",
-    "static/media/comentario-2.jpg": "/Caras_Landing_Page/static/media/comentario-2.7bfe7ea5713e78eafbb0.jpg",
-    "static/media/img-2.png": "/Caras_Landing_Page/static/media/img-2.0d1da15e50e368f23024.png",
-    "static/media/img-1.png": "/Caras_Landing_Page/static/media/img-1.e60e770924fa49902d84.png",
-    "static/media/comentario-3.jpg": "/Caras_Landing_Page/static/media/comentario-3.0e21e7cd4df13f906b10.jpg",
-    "static/media/Logo-1.png": "/Caras_Landing_Page/static/media/Logo-1.d34d29a0aeaf37aefab1.png",
-    "static/media/Logo-2.png": "/Caras_Landing_Page/static/media/Logo-2.d7ebfb9271db0031e345.png",
-    "static/media/comentario-1.jpg": "/Caras_Landing_Page/static/media/comentario-1.66714112bc7e8fe5fcfb.jpg",
+    "main.js": "/Caras_Landing_Page/static/js/main.ebbd173b.js",
+    "static/media/comentario-2.jpg": "/Caras_Landing_Page/static/media/comentario-2.3068e579031836498d74.jpg",
+    "static/media/comentario-2.webp": "/Caras_Landing_Page/static/media/comentario-2.2ef1b23c83e1859eba03.webp",
+    "static/media/comentario-3.jpg": "/Caras_Landing_Page/static/media/comentario-3.6ff7abc3ea2066cd9ced.jpg",
+    "static/media/img-2.png": "/Caras_Landing_Page/static/media/img-2.b644cb894b6bf259c3df.png",
+    "static/media/comentario-3.webp": "/Caras_Landing_Page/static/media/comentario-3.de812903aeaf264474da.webp",
+    "static/media/img-1.png": "/Caras_Landing_Page/static/media/img-1.6c17286e4081b98aa966.png",
+    "static/media/img-2.webp": "/Caras_Landing_Page/static/media/img-2.43289324c9a8ed9b79bb.webp",
+    "static/media/img-1.webp": "/Caras_Landing_Page/static/media/img-1.6f2db8a34aab4ec75010.webp",
+    "static/media/Logo-1.webp": "/Caras_Landing_Page/static/media/Logo-1.854ca21dbde65666107e.webp",
+    "static/media/Logo-2.webp": "/Caras_Landing_Page/static/media/Logo-2.d3a427cacd914e0aa56d.webp",
+    "static/media/Logo-2.png": "/Caras_Landing_Page/static/media/Logo-2.726e387e9b0069ca671f.png",
+    "static/media/Logo-1.png": "/Caras_Landing_Page/static/media/Logo-1.3d3e8ef1a091d0bba32a.png",
+    "static/media/comentario-1.webp": "/Caras_Landing_Page/static/media/comentario-1.74420a2c618508d89f8e.webp",
+    "static/media/comentario-4.webp": "/Caras_Landing_Page/static/media/comentario-4.7097ceecb96bc873bb0a.webp",
     "index.html": "/Caras_Landing_Page/index.html",
-    "main.b9962bfb.js.map": "/Caras_Landing_Page/static/js/main.b9962bfb.js.map"
+    "main.ebbd173b.js.map": "/Caras_Landing_Page/static/js/main.ebbd173b.js.map"
   },
   "entrypoints": [
-    "static/js/main.b9962bfb.js"
+    "static/js/main.ebbd173b.js"
   ]
 }
