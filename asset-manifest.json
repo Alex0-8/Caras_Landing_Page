@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Caras_Landing_Page/static/js/main.ebbd173b.js",
+    "main.js": "/Caras_Landing_Page/static/js/main.c616a222.js",
     "static/media/comentario-2.jpg": "/Caras_Landing_Page/static/media/comentario-2.3068e579031836498d74.jpg",
     "static/media/comentario-2.webp": "/Caras_Landing_Page/static/media/comentario-2.2ef1b23c83e1859eba03.webp",
     "static/media/comentario-3.jpg": "/Caras_Landing_Page/static/media/comentario-3.6ff7abc3ea2066cd9ced.jpg",
@@ -16,9 +16,9 @@
     "static/media/comentario-1.webp": "/Caras_Landing_Page/static/media/comentario-1.74420a2c618508d89f8e.webp",
     "static/media/comentario-4.webp": "/Caras_Landing_Page/static/media/comentario-4.7097ceecb96bc873bb0a.webp",
     "index.html": "/Caras_Landing_Page/index.html",
-    "main.ebbd173b.js.map": "/Caras_Landing_Page/static/js/main.ebbd173b.js.map"
+    "main.c616a222.js.map": "/Caras_Landing_Page/static/js/main.c616a222.js.map"
   },
   "entrypoints": [
-    "static/js/main.ebbd173b.js"
+    "static/js/main.c616a222.js"
   ]
 }
