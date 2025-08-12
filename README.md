@@ -1,3 +1,12 @@
+CARAS-LandingPage -Is a responsive landing page built with React + TypeScript that simulates a subscription flow for CARAS magazine. The page features a featured section, benefits area, testimonials area, and a simulated subscription form designed to showcase the visual and UX elements of a subscription campaign.
+
+**Features**
+- Responsive landing page for mobile and desktop.
+- Featured section, benefits and a simulated subscription form.
+- Basic client-side form validation.
+- Component-based structure with React and TypeScript.
+- Basic test setup (Jest) and npm scripts.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
