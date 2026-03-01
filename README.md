@@ -1,55 +1,242 @@
-CARAS-LandingPage -Is a responsive landing page built with React + TypeScript that simulates a subscription flow for CARAS magazine. The page features a featured section, benefits area, testimonials area, and a simulated subscription form designed to showcase the visual and UX elements of a subscription campaign.
+[English Version](#english)
 
-**Features**
-- Responsive landing page for mobile and desktop.
-- Featured section, benefits and a simulated subscription form.
-- Basic client-side form validation.
-- Component-based structure with React and TypeScript.
-- Basic test setup (Jest) and npm scripts.
+# 📰 CARAS Landing Page – Suscripción Digital
 
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <a href="https://react.dev/">
+    <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=flat-square" alt="React" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square" alt="TypeScript" />
+  </a>
+  <a href="https://styled-components.com/">
+    <img src="https://img.shields.io/badge/Styled%20Components-DB7093?logo=styled-components&logoColor=white&style=flat-square" alt="Styled Components" />
+  </a>
+  <a href="https://testing-library.com/">
+    <img src="https://img.shields.io/badge/Jest%20%2B%20RTL-99424B?logo=jest&logoColor=white&style=flat-square" alt="Jest + RTL" />
+  </a>
+  <a href="https://alex0-8.github.io/Caras_Landing_Page/">
+    <img src="https://img.shields.io/badge/Live%20Demo-brightgreen?logo=vercel&logoColor=white&style=flat-square" alt="Demo en vivo" />
+  </a>
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+**CARAS Landing Page** es una réplica moderna y responsive de una página de suscripción para la revista **CARAS México**, recreada como ejercicio práctico en EBAC.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+El objetivo fue transformar un diseño estático original (HTML + CSS) en una aplicación **React + TypeScript** fiel al estilo editorial de CARAS: elegante, sofisticado, misma tipografía serif, colores, espaciados y jerarquía visual premium.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+🔗 **Demo en vivo** → [https://alex0-8.github.io/Caras_Landing_Page/](https://alex0-8.github.io/Caras_Landing_Page/)
 
-### `npm test`
+  <img width="1351" height="640" alt="CARAS_Desktop" src="https://github.com/user-attachments/assets/b9ea9208-aae4-4a4b-b736-3919a09b6f03" />
+  <img width="372" height="548" alt="CARAS_Mobile" src="https://github.com/user-attachments/assets/770c8c5c-d53c-4eeb-8dda-166fa82495ad" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Características principales
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Diseño **pixel-perfect** inspirado en la identidad visual de CARAS México
+- Totalmente **responsive** (mobile-first) – adapta perfectamente a todos los dispositivos
+- Sección destacada (hero), beneficios, testimonios y formulario de suscripción simulado
+- Validación de formulario en tiempo real (cliente)
+- **Accesibilidad** mejorada: navegación completa por teclado, focus visible, aria-labels y mensajes de error anunciados
+- Estructura modular con componentes reutilizables
+- Estilizado con **styled-components** + tema centralizado
+- Pruebas unitarias e integración con **Jest + React Testing Library**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Stack Tecnológico
 
-### `npm run eject`
+| Categoría          | Tecnología / Herramienta                          | Notas                                      |
+|--------------------|---------------------------------------------------|--------------------------------------------|
+| Framework          | React 19+                                         | Hooks + componentes funcionales            |
+| Lenguaje           | TypeScript                                        | Tipado fuerte en props y hooks             |
+| Estilos            | styled-components + styled-reset                  | Tema consistente + reset CSS               |
+| Formularios        | React Hook Form (o custom hook)                   | Validación controlada                      |
+| Testing            | Jest + React Testing Library + jest-dom           | Cobertura en formularios y componentes     |
+| Build & Deploy     | Create React App + gh-pages                       | Despliegue sencillo en GitHub Pages        |
+| Accesibilidad      | ARIA attributes + focus management                | Navegación por teclado sin bucles          |
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔥 Retos enfrentados y cómo los resolví
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Reto                                          | Solución aplicada                                                                 | Impacto / Aprendizaje                              |
+|-----------------------------------------------|-----------------------------------------------------------------------------------|----------------------------------------------------|
+| Mantener fidelidad visual al diseño original  | Uso de styled-components con variables de tema + medición precisa de espaciados y tipografías | Alta calidad visual y fácil mantenimiento         |
+| Primera vez implementando accesibilidad real  | Agregué `tabIndex`, `aria-label`, `role="alert"` en errores, `aria-live` en mensajes, y manejo manual de focus para evitar bucles en el formulario | Página navegable 100% con teclado – gran mejora en UX inclusiva |
+| Evitar bucles de foco en el formulario        | Uso de `useRef` + lógica condicional para mover el foco al siguiente campo válido o al botón | Experiencia fluida sin frustración para usuarios de teclado/screen reader |
+| Validación robusta sin librerías pesadas      | Custom hook `useSubscriptionForm` con validación manual + mensajes claros         | Código ligero, predecible y fácil de testear      |
+| Tests realistas del flujo de formulario       | Simulación de interacciones completas (change + submit) + mocks y assertions      | Confianza alta en que el formulario funciona       |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 🚀 Cómo empezar (para principiantes)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 1. ¿Qué necesito tener instalado?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Node.js** versión 16 o superior (recomendado 18+)  
+  → [Descargar aquí](https://nodejs.org/)
+
+### 2. Pasos para verlo en tu computadora
+
+1. Clona el repositorio  
+   ```bash
+   git clone https://github.com/Alex0-8/Caras_Landing_Page.git
+   cd Caras_Landing_Page
+   ```
+2. Instala las dependencias
+   ```bash
+   npm install
+   ```
+→ Se abrirá automáticamente en http://localhost:3000
+
+## ¡Listo! Ya puedes navegar la landing y probar el formulario.
+Comandos más útiles
+
+```bash
+  # Iniciar en modo desarrollo
+  npm start
+  
+  # Correr pruebas (modo interactivo)
+  npm test
+  
+  # Ver porcentaje de cobertura de tests
+  npm run test:coverage
+  
+  # Generar versión para producción
+  npm run build
+  
+  # Publicar en GitHub Pages (si tienes configurado gh-pages)
+  npm run deploy
+```
+---
+
+# 📄 Licencia
+Siéntete libre de usar, modificar y aprender de este proyecto.
+Última actualización importante: 1 de Marzo de 2026
+¡Gracias por visitar la landing de CARAS!
+
+---
+
+# English Version
+
+# 📰 CARAS Landing Page – Digital Subscription
+
+<div align="center">
+
+  <a href="https://react.dev/">
+    <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=flat-square" alt="React" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=flat-square" alt="TypeScript" />
+  </a>
+  <a href="https://styled-components.com/">
+    <img src="https://img.shields.io/badge/Styled%20Components-DB7093?logo=styled-components&logoColor=white&style=flat-square" alt="Styled Components" />
+  </a>
+  <a href="https://testing-library.com/">
+    <img src="https://img.shields.io/badge/Jest%20%2B%20RTL-99424B?logo=jest&logoColor=white&style=flat-square" alt="Jest + RTL" />
+  </a>
+  <a href="https://alex0-8.github.io/Caras_Landing_Page/">
+    <img src="https://img.shields.io/badge/Live%20Demo-brightgreen?logo=vercel&logoColor=white&style=flat-square" alt="Live demo" />
+  </a>
+
+</div>
+
+---
+
+**CARAS Landing Page** is a modern, responsive replica of a subscription page for the **CARAS México** magazine, recreated as a practical exercise at EBAC.
+
+The goal was to transform an original static design (HTML + CSS) into a **React + TypeScript** application faithful to CARAS’s editorial style: elegant, sophisticated, same typography, colors, spacing, and a premium visual hierarchy.
+
+🔗 **Live demo** → [https://alex0-8.github.io/Caras_Landing_Page/](https://alex0-8.github.io/Caras_Landing_Page/)
+
+  <img width="1351" height="640" alt="CARAS_Desktop" src="https://github.com/user-attachments/assets/b9ea9208-aae4-4a4b-b736-3919a09b6f03" />
+  <img width="372" height="548" alt="CARAS_Mobile" src="https://github.com/user-attachments/assets/770c8c5c-d53c-4eeb-8dda-166fa82495ad" />
+
+---
+
+## ✨ Key Features
+
+- **Pixel-perfect** design inspired by CARAS México’s visual identity
+- Fully **responsive** (mobile-first) – adapts seamlessly across devices
+- Hero section, benefits, testimonials, and a simulated subscription form
+- Real-time client-side form validation
+- Enhanced **accessibility**: full keyboard navigation, visible focus, aria-labels, and announced error messages
+- Modular structure with reusable components
+- Styled with **styled-components** + centralized theme
+- Unit and integration tests with **Jest + React Testing Library**
+
+---
+
+## 🛠️ Tech Stack
+
+| Category           | Technology / Tool                                 | Notes                                      |
+|--------------------|---------------------------------------------------|--------------------------------------------|
+| Framework          | React                                         | Hooks + functional components              |
+| Language           | TypeScript                                        | Strong typing in props and hooks           |
+| Styling            | styled-components                  | Consistent theme               |
+| Forms              | React Hook Form (or custom hook)                   | Controlled validation                      |
+| Testing            | Jest + React Testing Library + jest-dom           | Coverage on forms and components           |
+| Build & Deploy     | Create React App + gh-pages                       | Simple deploy to GitHub Pages              |
+| Accessibility      | ARIA attributes + focus management                | Keyboard navigation without loops          |
+
+---
+
+## 🔥 Challenges Faced and Solutions
+
+| Challenge                                       | Applied Solution                                                              | Impact / Learning                                |
+|------------------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------|
+| Maintaining visual fidelity to original design | Used styled-components with theme variables + precise measurement of spacing and fonts | High visual quality and easy maintenance         |
+| First time implementing real accessibility      | Added `tabIndex`, `aria-label`, `role="alert"` on errors, `aria-live` on messages, and manual focus handling to prevent loops in form | 100% keyboard-navigable page – major UX improvement for inclusivity |
+| Avoiding focus loops in the form               | Used `useRef` + conditional logic to move focus to next valid field or button | Smooth experience for keyboard/screen reader users |
+| Robust validation without heavy libraries      | Custom hook `useSubscriptionForm` with manual validation + clear messages    | Lightweight, predictable code that’s easy to test  |
+| Realistic form flow tests                      | Simulated complete interactions (change + submit) + mocks and assertions      | High confidence that form works correctly         |
+
+---
+
+## 🚀 Getting Started (for beginners)
+
+### 1. What do I need installed?
+
+- **Node.js** version 16 or higher  
+  → [Download here](https://nodejs.org/)
+
+### 2. Steps to run it on your machine
+
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/Alex0-8/Caras_Landing_Page.git
+   cd Caras_Landing_Page
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+→ It will automatically open at http://localhost:3000
+
+## That’s it! You can now browse the landing page and test the form.
+Useful commands
+
+```bash
+  # Start in development mode
+  npm start
+  
+  # Run tests (interactive mode)
+  npm test
+  
+  # View test coverage percentage
+  npm run test:coverage
+  
+  # Build production version
+  npm run build
+```
+---
+
+# 📄 License
+Feel free to use, modify, and learn from this project.
+Last important update: March 1, 2026
+Thank you for visiting the CARAS landing page!
