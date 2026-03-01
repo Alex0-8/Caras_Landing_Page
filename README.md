@@ -30,8 +30,10 @@ El objetivo fue transformar un diseño estático original (HTML + CSS) en una ap
 
 🔗 **Demo en vivo** → [https://alex0-8.github.io/Caras_Landing_Page/](https://alex0-8.github.io/Caras_Landing_Page/)
 
-  <img width="1351" height="640" alt="CARAS_Desktop" src="https://github.com/user-attachments/assets/b9ea9208-aae4-4a4b-b736-3919a09b6f03" />
-  <img width="372" height="548" alt="CARAS_Mobile" src="https://github.com/user-attachments/assets/770c8c5c-d53c-4eeb-8dda-166fa82495ad" />
+<div align="center" >
+  <img width="600" height="auto" alt="CARAS_Desktop" src="https://github.com/user-attachments/assets/b9ea9208-aae4-4a4b-b736-3919a09b6f03" />
+  <img width="320" height="auto" alt="CARAS_Mobile" src="https://github.com/user-attachments/assets/770c8c5c-d53c-4eeb-8dda-166fa82495ad" />  
+</div>
 
 ---
 
@@ -122,7 +124,7 @@ Siéntete libre de usar, modificar y aprender de este proyecto.
 
 ---
 
-# English Version
+# English
 
 # 📰 CARAS Landing Page – Digital Subscription
 
@@ -154,8 +156,10 @@ The goal was to transform an original static design (HTML + CSS) into a **React 
 
 🔗 **Live demo** → [https://alex0-8.github.io/Caras_Landing_Page/](https://alex0-8.github.io/Caras_Landing_Page/)
 
-  <img width="1351" height="640" alt="CARAS_Desktop" src="https://github.com/user-attachments/assets/b9ea9208-aae4-4a4b-b736-3919a09b6f03" />
-  <img width="372" height="548" alt="CARAS_Mobile" src="https://github.com/user-attachments/assets/770c8c5c-d53c-4eeb-8dda-166fa82495ad" />
+<div align="center" >
+  <img width="600" height="auto" alt="CARAS_Desktop" src="https://github.com/user-attachments/assets/b9ea9208-aae4-4a4b-b736-3919a09b6f03" />
+  <img width="320" height="auto" alt="CARAS_Mobile" src="https://github.com/user-attachments/assets/770c8c5c-d53c-4eeb-8dda-166fa82495ad" />  
+</div>
 
 ---
 
